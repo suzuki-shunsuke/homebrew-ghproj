@@ -6,13 +6,13 @@ class Ghproj < Formula
   desc "Add GitHub Issues and Pull Requests to GitHub Projects
 "
   homepage "https://github.com/suzuki-shunsuke/ghproj"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/suzuki-shunsuke/ghproj/releases/download/v0.1.2/ghproj_darwin_amd64.tar.gz"
-      sha256 "a4b1b2d18e82f0bdd957402974c365e4e3881ba620170dbe51283c0d8b963b55"
+      url "https://github.com/suzuki-shunsuke/ghproj/releases/download/v0.1.3/ghproj_darwin_amd64.tar.gz"
+      sha256 "572f2cb0d5497e47f82114a81545a70127410a94e88205a61136e2a593f28bca"
 
       def install
         bin.install "ghproj"
@@ -20,8 +20,8 @@ class Ghproj < Formula
       end
     end
     on_arm do
-      url "https://github.com/suzuki-shunsuke/ghproj/releases/download/v0.1.2/ghproj_darwin_arm64.tar.gz"
-      sha256 "c52e1b841236e08fd5b6122940759af25872f3dce708d0013a99d4548468f7cd"
+      url "https://github.com/suzuki-shunsuke/ghproj/releases/download/v0.1.3/ghproj_darwin_arm64.tar.gz"
+      sha256 "a5efcf48f5a3c43070db6e7a26366d75b6567d05765439eefa3ab2a501fb4cc2"
 
       def install
         bin.install "ghproj"
@@ -33,8 +33,8 @@ class Ghproj < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/suzuki-shunsuke/ghproj/releases/download/v0.1.2/ghproj_linux_amd64.tar.gz"
-        sha256 "956fc5bc7bbef2adca763e16e333c2095bf4d9c232ce9bac488579924490387a"
+        url "https://github.com/suzuki-shunsuke/ghproj/releases/download/v0.1.3/ghproj_linux_amd64.tar.gz"
+        sha256 "3be9680350a85e26891af30e4bcc8d3879e12d1d079471b566b696c55c67b517"
 
         def install
           bin.install "ghproj"
@@ -44,8 +44,8 @@ class Ghproj < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/suzuki-shunsuke/ghproj/releases/download/v0.1.2/ghproj_linux_arm64.tar.gz"
-        sha256 "11017dee5b014af376ea8b7eb2ec2406686f04aa1d3121aa14b9fb7c56d3f332"
+        url "https://github.com/suzuki-shunsuke/ghproj/releases/download/v0.1.3/ghproj_linux_arm64.tar.gz"
+        sha256 "9543d78aacd77f64495a11bfb5f1fa28a41bfc84f6ed0f4527d12fd6cfdfcf3d"
 
         def install
           bin.install "ghproj"
