@@ -3,7 +3,7 @@ cask "ghproj" do
   desc "Add GitHub Issues and Pull Requests to GitHub Projects
 "
   homepage "https://github.com/suzuki-shunsuke/ghproj"
-  version "0.1.7"
+  version "0.1.8"
 
   livecheck do
     skip "Auto-generated on release."
@@ -13,23 +13,29 @@ cask "ghproj" do
 
   on_macos do
     on_intel do
-      url "https://github.com/suzuki-shunsuke/ghproj/releases/download/v0.1.7/ghproj_darwin_amd64.tar.gz"
-      sha256 "dcb61f362428813d19bab917d9899a036b1097648a21b5469bb749a0abceeb88"
+      url "https://github.com/suzuki-shunsuke/ghproj/releases/download/v0.1.8/ghproj_darwin_amd64.tar.gz"
+      sha256 "08d9faa280d167c1afe4f2149d7de7ef6fa686b2d4677c290b97aee4507e6de1"
     end
     on_arm do
-      url "https://github.com/suzuki-shunsuke/ghproj/releases/download/v0.1.7/ghproj_darwin_arm64.tar.gz"
-      sha256 "942f021577db41300eb261495f4f955e0e9f25f74e3717417dca8fe8f9453eb6"
+      url "https://github.com/suzuki-shunsuke/ghproj/releases/download/v0.1.8/ghproj_darwin_arm64.tar.gz"
+      sha256 "6e6e93299d0122a7a1f68b5b6327b970052fdb51a9037a59b1fd5d0132926d77"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/suzuki-shunsuke/ghproj/releases/download/v0.1.7/ghproj_linux_amd64.tar.gz"
-      sha256 "206eb302ed2c46be1847dcf061a4b97634900455951c8d78349b27feeedaed4a"
+      url "https://github.com/suzuki-shunsuke/ghproj/releases/download/v0.1.8/ghproj_linux_amd64.tar.gz"
+      sha256 "529de8caff226b70f5e6c3429dccabcca95433a84448fa46daf5ca87020fa0aa"
     end
     on_arm do
-      url "https://github.com/suzuki-shunsuke/ghproj/releases/download/v0.1.7/ghproj_linux_arm64.tar.gz"
-      sha256 "c2be46204c240a8578055a396af2875a909006391b9521310a67a6dab16946f9"
+      url "https://github.com/suzuki-shunsuke/ghproj/releases/download/v0.1.8/ghproj_linux_arm64.tar.gz"
+      sha256 "9d97cec840dfdf03a5ea503865b4eb5f45da11235180379e3110ba2b70a22595"
+    end
+  end
+
+  postflight do
+    if system_command("/usr/bin/xattr", args: ["-h"]).exit_status == 0
+      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/ghproj"]
     end
   end
 
