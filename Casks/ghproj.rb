@@ -3,7 +3,7 @@ cask "ghproj" do
   desc "Add GitHub Issues and Pull Requests to GitHub Projects
 "
   homepage "https://github.com/suzuki-shunsuke/ghproj"
-  version "0.1.8"
+  version "0.1.9"
 
   livecheck do
     skip "Auto-generated on release."
@@ -13,23 +13,23 @@ cask "ghproj" do
 
   on_macos do
     on_intel do
-      url "https://github.com/suzuki-shunsuke/ghproj/releases/download/v0.1.8/ghproj_darwin_amd64.tar.gz"
-      sha256 "08d9faa280d167c1afe4f2149d7de7ef6fa686b2d4677c290b97aee4507e6de1"
+      url "https://github.com/suzuki-shunsuke/ghproj/releases/download/v0.1.9/ghproj_darwin_amd64.tar.gz"
+      sha256 "7a655ab092b15bcc197b529acd19f10669021fd27a4f695a48a2e1a8578de644"
     end
     on_arm do
-      url "https://github.com/suzuki-shunsuke/ghproj/releases/download/v0.1.8/ghproj_darwin_arm64.tar.gz"
-      sha256 "6e6e93299d0122a7a1f68b5b6327b970052fdb51a9037a59b1fd5d0132926d77"
+      url "https://github.com/suzuki-shunsuke/ghproj/releases/download/v0.1.9/ghproj_darwin_arm64.tar.gz"
+      sha256 "2d85a5bec984ed9ff8be309b352f469d38984faa0d3729b4d85897dc22c239a1"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/suzuki-shunsuke/ghproj/releases/download/v0.1.8/ghproj_linux_amd64.tar.gz"
-      sha256 "529de8caff226b70f5e6c3429dccabcca95433a84448fa46daf5ca87020fa0aa"
+      url "https://github.com/suzuki-shunsuke/ghproj/releases/download/v0.1.9/ghproj_linux_amd64.tar.gz"
+      sha256 "81fcbaec7c64df8a008ed16bfd94438cfdc916916e27ee3048a81c0147d9d831"
     end
     on_arm do
-      url "https://github.com/suzuki-shunsuke/ghproj/releases/download/v0.1.8/ghproj_linux_arm64.tar.gz"
-      sha256 "9d97cec840dfdf03a5ea503865b4eb5f45da11235180379e3110ba2b70a22595"
+      url "https://github.com/suzuki-shunsuke/ghproj/releases/download/v0.1.9/ghproj_linux_arm64.tar.gz"
+      sha256 "2982f56696a3dff1dcc4a07963dc2f7501ac1389664227940e9d6318ca6f32cf"
     end
   end
 
